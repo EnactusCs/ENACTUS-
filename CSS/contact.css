@@ -38,8 +38,14 @@ input {
 }
 
 iframe {
-  margin-right: 40px;
+  width: 100%;
+  /* Make the iframe take up 100% of its container's width */
+  height: auto;
+  /* Automatically adjust the height based on the width */
   border-radius: 15px;
+  /* Apply border-radius */
+  margin-bottom: 20px;
+  /* Add some margin for spacing */
 }
 
 .screen:after {
@@ -194,7 +200,19 @@ iframe {
   background-color: #000000;
 }
 
+@media (min-width: 768px) {
+  iframe {
+    max-width: 800px;
+    height: 60vh;
+    /* Limit the maximum width of the iframe on larger screens */
+    margin-right: 40px;
+    /* Add margin only on larger screens */
+  }
+}
+
 @media screen and (max-width: 520px) {
+
+
   .screen-body {
     flex-direction: column;
   }
@@ -234,13 +252,19 @@ iframe {
     display: block;
   }
 
-  iframe {
-    width: 90%;
-    margin-left: 20px;
-  }
 }
 
 @media screen and (max-width: 600px) {
+
+  iframe {
+    max-width: 800px;
+    height: 60vh;
+    /* Limit the maximum width of the iframe on larger screens */
+    margin-right: 40px;
+    /* Add margin only on larger screens */
+  }
+
+
   .screen-body {
     padding: 24px;
     width: 80vw;
