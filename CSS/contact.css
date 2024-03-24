@@ -204,8 +204,6 @@ iframe {
   iframe {
     max-width: 800px;
     height: 60vh;
-    /* Limit the maximum width of the iframe on larger screens */
-    margin-right: 40px;
     /* Add margin only on larger screens */
   }
 }
@@ -260,7 +258,7 @@ iframe {
     max-width: 800px;
     height: 60vh;
     /* Limit the maximum width of the iframe on larger screens */
-    margin-right: 40px;
+    /* margin-right: 40px; */
     /* Add margin only on larger screens */
   }
 
