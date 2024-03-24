@@ -188,8 +188,19 @@ i {
     left: -25px;
 }
 
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+        height: 60vh;
+    }
+
+    .navbar-logo {
+        margin-bottom: 20px;
+    }
+}
 
 @media(min-width: 992px) {
+
     .navbar-expand-custom {
         -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
